@@ -1,0 +1,122 @@
+$screen-sm-min: 515px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+$screen-xl-min: 1200px
+
+@mixin sm
+  @media (min-width: #{$screen-sm-min})
+    @content
+
+@mixin md
+  @media (min-width: #{$screen-md-min})
+    @content
+
+@mixin lg
+  @media (min-width: #{$screen-lg-min})
+    @content
+
+@mixin xl
+  @media (min-width: #{$screen-xl-min})
+    @content
+
+.TransparencyButton
+  min-height: 55px !important
+  background-color: #0F5AEF!important
+  border: 0px !important
+  border-radius: 4px
+  margin: 5% 10%
+  &:hover
+    background-color: #0d4dce !important
+
+.LoginButton
+  background-color: #0F5AEF!important
+  border: 0px !important
+  border-radius: 4px
+  &:hover
+    background-color: #0d4dce !important
+
+.NavButton
+  background-color: #0A0A0A
+  box-shadow: 0px 3px 6px #00000029
+  border-radius: 4px
+  border: 1px solid #0F5AEF !important
+  padding: 6px 24px
+  @include sm
+    border: 0px !important
+  &:hover
+    background-color: #202020
+
+.ModalCloseButton
+  background: #FFFFFF 0% 0% no-repeat padding-box
+  border: 1px solid #ABABAB
+  padding: 8px 64px !important
+  border-radius: 4px
+  text-align: center
+  font: normal normal normal 16px/25px Poppins
+  color: #4A4A4A
+
+.ModalAccertButton
+  background-color: #0A0A0A
+  border: 1px solid #0F5AEF !important
+  padding: 8px 64px !important
+  border-radius: 4px
+  text-align: center
+  font: normal normal normal 16px/25px Poppins
+  color: #FFFFFF
+  
+.ModalCancelButton
+  background: #DC2626 0% 0% no-repeat padding-box
+  border-radius: 4px
+  font: normal normal normal 16px/25px Poppins
+  letter-spacing: 0px
+  color: #FFFFFF
+  padding: 8px 30px
+  &:hover
+    background-color: #ee1b1b 
+
+.ButtonBottomBlue
+  background: #0F5AEF 0% 0% no-repeat padding-box
+  border-radius: 0px 0px 0px 4px
+  border-color: #0F5AEF
+  font: normal normal normal 16px/25px Poppins
+  color: #FFFFFF
+  &:hover
+    background-color: #0d4dce 
+    border-color: #0d4dce 
+
+.ButtonBottomRed
+  background: #DC2626 0% 0% no-repeat padding-box
+  border-radius: 0px 0px 4px 0px
+  border-color: #DC2626 
+  font: normal normal normal 16px/25px Poppins
+  color: #FFFFFF
+  &:hover
+    background-color: #ce1a1a 
+    border-color: #ce1a1a 
+  &:focus
+    background-color: #ce1a1a 
+    border-color: #ce1a1a
+
+.ButtonFilterCancel
+  background: #FFFFFF 0% 0% no-repeat padding-box
+  border-radius: 4px
+  font: normal normal normal 16px/25px Poppins
+  color: #0A0A0A
+  border-color: #FFFFFF
+  padding: 5% 20%
+  &:hover
+    background: #e4e4e4 0% 0% no-repeat padding-box
+    border-color: #e4e4e4
+
+
+.ButtonFilter
+  background: #0F5AEF 0% 0% no-repeat padding-box
+  border-radius: 4px
+  font: normal normal normal 16px/25px Poppins
+  color: #0A0A0A
+  border-color: #0F5AEF
+  padding: 5% 20%
+  &:hover
+    background: #0a48c5 0% 0% no-repeat padding-box
+    border-color: #0a48c5 
+

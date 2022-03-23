@@ -1,0 +1,129 @@
+$screen-sm-min: 515px
+$screen-md-min: 768px
+$screen-lg-min: 992px
+$screen-xl-min: 1200px
+
+@mixin sm
+  @media (min-width: #{$screen-sm-min})
+    @content
+
+@mixin md
+  @media (min-width: #{$screen-md-min})
+    @content
+
+@mixin lg
+  @media (min-width: #{$screen-lg-min})
+    @content
+
+@mixin xl
+  @media (min-width: #{$screen-xl-min})
+    @content
+
+h1
+  font: normal normal bold 24px/35px Poppins
+  color: #0A0A0A
+
+h2
+  color: #0A0A0A
+  font: normal normal bold 24px/26px Poppins
+
+h4
+  font: normal normal bold 18px/27px Poppins
+  color: #0A0A0A
+  opacity: 1
+
+h5
+  font: normal normal bold 16px/26px Poppins
+  color: #0A0A0A
+
+h6
+  font: normal normal normal 20px/30px Poppins
+  color: #0A0A0A
+
+label
+  font: normal normal 300 16px/25px Poppins
+  margin-bottom: 4px !important
+
+p
+  font: normal normal 300 16px/25px Poppins
+  color: #4A4A4A
+
+a
+  text-decoration: underline
+
+.WhiteLabel
+  font: normal normal 300 16px/25px Poppins
+  margin-bottom: 4px !important
+  color: #FFFFFF
+
+.BlueP
+  font: normal normal 300 16px/25px Poppins
+  color: #0F5AEF
+  
+.BlueH5
+  font: normal normal bold 16px/26px Poppins
+  color: #0F5AEF
+
+.BlueH2
+  font: normal normal bold 22px/33px Poppins
+  color: #0F5AEF
+
+.BlueH1
+  font: normal normal bold 30px/30px Poppins
+  color: #0F5AEF
+
+.GreenH3
+  font: normal normal bold 24px/35px Poppins
+  color: #20D5AB
+
+.GreenH5
+  font: normal normal 600 15px/23px Poppins
+  color: #00CF9F
+  margin: 0
+  text-align: end
+
+.RedH5
+  font: normal normal 600 15px/23px Poppins
+  color: #DC2626
+  margin: 0
+  text-align: end
+
+.WhiteH2
+  font: normal normal bold 28px/42px Poppins
+  color: #FFFFFF
+
+.WhiteH3
+  font: normal normal 600 20px/30px Poppins
+  color: #FFFFFF
+
+.GrayP
+  font: normal normal normal 16px/25px Poppins
+  color: #D2D2D2
+
+.WhiteP
+  font: normal normal normal 16px/25px Poppins
+  color: #FFFFFF
+
+.ButtonWhiteText
+  font: normal normal bold 16px/25px Poppins
+  margin-bottom: 0px
+  color: #FFFFFF
+
+.LinkToRecover
+  display: flex
+  justify-content: end
+  text-decoration: none
+  color: #FFFFFF
+  font: normal normal normal 16px/25px Poppins
+  &:hover
+    color: #d3d3d3
+  @include sm
+    color: #4A4A4A
+    &:hover
+      color: #1d1b1b
+
+.UlRed
+  font: normal normal normal 16px/23px Poppins
+  color: #FF4646
+
+    
